@@ -1,0 +1,86 @@
+.node-animation {
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.node-start {
+    background-image: url("../../../public/assets/start.svg");
+}
+
+.node-finish {
+    background-image: url("../../../public/assets/finish.svg");
+}
+
+.node-weight {
+    background-image: url("../../../public/assets/weight.svg");
+}
+
+.node-wall, .node-weight {
+    animation-duration: .5s;
+    animation-name: wallAnimation;
+}
+
+.node-wall {
+    background-color: #fff;
+}
+
+@keyframes wallAnimation {
+    0% {
+        transform: scale(0.4);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.node-visited {
+    animation-name: visitedAnimation;
+    background-color: rgba(0, 190, 218, 0.75);
+}
+
+@keyframes visitedAnimation {
+    0% {
+        transform: scale(0.3);
+        background-color: rgba(0, 0, 66, 0.75);
+        border-radius: 100%;
+    }
+
+    50% {
+        background-color: rgba(17, 104, 217, 0.75);
+    }
+
+    75% {
+        transform: scale(1.2);
+        background-color: rgba(0, 217, 159, 0.75);
+    }
+
+    100% {
+        transform: scale(1);
+        background-color: rgba(0, 190, 218, 0.75);
+    }
+}
+
+.node-path {
+    animation-name: pathAnimation;
+    background-color: #87F500BF;
+}
+
+@keyframes pathAnimation {
+    0% {
+        transform: scale(0.6);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
