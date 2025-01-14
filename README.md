@@ -1,6 +1,6 @@
 # Pathfinding Visualizer
 
-### [Demo](https://1Math3w.github.io/Pathfinding-Visualizer)
+### [Demo](https://matejlorinc.github.io/Pathfinding-Visualizer)
 
 Tool that shows how different pathfinding algorithms work.
 
